@@ -1,0 +1,35 @@
+.textField{
+    -fx-border-color: null;
+    -fx-background-color: null;
+    -fx-background-radius: 3;
+    -fx-opacity: 0.6;
+
+}
+
+/*.textField{
+    -fx-border-color: rgba(0,0,0,0.5);
+    -fx-border-radius: 3;
+    -fx-background-color: null;
+    -fx-background-radius: 3;
+    -fx-border-width: 2;
+    -fx-opacity: 0.6;
+
+}*/
+
+.label1{
+    -fx-text-fill: #3E575B;
+}
+.combo-boxInAddCustomer{
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(0,0,0,0.5);
+    -fx-border-radius: 3;
+    -fx-border-width: 2;
+    -fx-opacity: 0.6;
+
+}
+
+.textFieldWrapper{
+    -fx-border-color: rgba(0,0,0,0.3    );
+    -fx-border-radius: 3;
+    -fx-border-width: 2;
+}

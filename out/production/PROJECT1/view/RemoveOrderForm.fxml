@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="676.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemoveOrderFormController">
+   <children>
+      <Pane layoutX="52.0" layoutY="44.0" styleClass="sideMenuBox" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="48.0" layoutY="40.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtCustId" focusTraversable="false" layoutX="2.0" layoutY="3.0" prefHeight="26.0" prefWidth="430.0" promptText="Search By Customer ID or Order ID" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tblOrder" layoutX="48.0" layoutY="91.0" prefHeight="313.0" prefWidth="934.0">
+              <columns>
+                <TableColumn fx:id="clmCustId" prefWidth="128.0" text="Customer ID" />
+                <TableColumn fx:id="clmOrderId" prefWidth="135.0" text="Order ID" />
+                  <TableColumn fx:id="clmOrderDate" minWidth="0.0" prefWidth="225.0" text="Order Date" />
+                  <TableColumn fx:id="clmOrderTime" prefWidth="178.0" text="Order Time" />
+                  <TableColumn fx:id="clmCost" prefWidth="174.0" text="Cost" />
+                  <TableColumn fx:id="clmDelete" prefWidth="93.0" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tblItem" layoutX="47.0" layoutY="429.0" prefHeight="197.0" prefWidth="934.0">
+               <columns>
+                  <TableColumn fx:id="clmItemCode" prefWidth="166.0" text="Item Code" />
+                  <TableColumn fx:id="clmDescription" prefWidth="565.0" text="Description" />
+                  <TableColumn fx:id="clmQuantity" prefWidth="202.0" text="Quantity" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="btnDeleteAll" layoutX="878.0" layoutY="57.0" onAction="#deleteAllOnAction" prefHeight="26.0" prefWidth="103.0" styleClass="DeleteButton" text="Delete All" />
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/addItemFormStyle.css" />
+      <URL value="@../style/HomeFormStye.css" />
+   </stylesheets>
+</AnchorPane>

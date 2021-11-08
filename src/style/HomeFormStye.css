@@ -1,0 +1,44 @@
+.sideMenuItemPane{
+    -fx-background-radius: 20 20 20 20;
+    /*-fx-border-color: #3498db;*/
+    -fx-background-color: rgba(0,0,0,0.1);
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
+.centerVbox{
+    -fx-background-color: #f5f6fa;
+    -fx-background-radius: 20 20 20 20;
+}
+.rightVbox{
+    -fx-background-color: #f5f6fa;
+    -fx-background-radius: 20 20 20 20;
+}
+.sideMenuBox{
+    -fx-background-color: #f5f6fa;
+    -fx-background-radius: 20;
+}
+.JFButton{
+    /*-fx-background-color: #575fcf;*/
+    -fx-background-color: linear-gradient(from 10% 10% to 50% 50%, #0e84a2/*#00CFFF*/ , #2ecc71 /*#BB00FF*/);
+    -fx-background-radius: 10;
+}
+
+.AddToBillButton{
+    /*-fx-background-color: #575fcf;*/
+    -fx-background-color: linear-gradient(from 10% 10% to 50% 50%, #2980b9/*#00CFFF*/ , #0e84a2 /*#BB00FF*/);
+    -fx-background-radius: 10;
+}
+
+.DeleteButton{
+    /*-fx-background-color: #575fcf;*/
+    -fx-background-color: #d35400;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+}
+
+.AllJFButtons{
+    /*-fx-background-color: #575fcf;*/
+    -fx-background-color: linear-gradient(from 10% 10% to 50% 50%, #2ecc71/*#00CFFF*/ , #3498db /*#BB00FF*/);
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+}

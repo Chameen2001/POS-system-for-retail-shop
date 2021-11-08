@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="207.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyOrderItemFormController">
+   <children>
+      <Label layoutX="46.0" layoutY="28.0" text="Item Id : ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItemId" layoutX="159.0" layoutY="28.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="74.0" text="Change Quantity">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="160.0" layoutY="111.0" styleClass="textFieldWrapper">
+         <children>
+            <TextField fx:id="txtQuantity" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" promptText="Quantity" styleClass="textField" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnSave" layoutX="206.0" layoutY="163.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="26.0" prefWidth="79.0" styleClass="AllJFButtons" text="Save" />
+   </children>
+   <stylesheets>
+      <URL value="@../style/HomeFormStye.css" />
+      <URL value="@../style/addItemFormStyle.css" />
+   </stylesheets>
+</AnchorPane>

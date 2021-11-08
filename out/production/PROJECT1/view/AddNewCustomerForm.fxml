@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNewCustomerPane" prefHeight="666.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewCustomerFormController">
+   <children>
+      <Pane prefHeight="663.0" prefWidth="998.0" styleClass="sideMenuBox">
+         <children>
+            <Label layoutX="95.0" layoutY="69.0" opacity="0.81" text="ID">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="95.0" layoutY="101.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtCustomerId" editable="false" focusTraversable="false" layoutX="-1.0" layoutY="4.0" maxWidth="84.0" prefHeight="26.0" prefWidth="84.0" promptText="ID" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="339.0" layoutY="69.0" opacity="0.81" text="Customer name">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="339.0" layoutY="101.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtCustomerName" focusTraversable="false" layoutX="2.0" layoutY="4.0" onKeyReleased="#validationOnAction" prefHeight="26.0" prefWidth="373.0" promptText="Name" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="98.0" layoutY="148.0" opacity="0.81" text="Address">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="95.0" layoutY="181.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtAddress" focusTraversable="false" layoutX="4.0" layoutY="4.0" onKeyReleased="#validationOnAction" prefHeight="26.0" prefWidth="619.0" promptText="Address" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="95.0" layoutY="225.0" opacity="0.81" text="City">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="95.0" layoutY="259.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtCity" focusTraversable="false" layoutX="2.0" layoutY="3.0" onKeyReleased="#validationOnAction" promptText="City" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="739.0" layoutY="69.0" opacity="0.81" text="Province">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="739.0" layoutY="101.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtProvince" focusTraversable="false" layoutX="4.0" layoutY="4.0" onKeyReleased="#validationOnAction" prefHeight="26.0" prefWidth="161.0" promptText="Province" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="742.0" layoutY="147.0" opacity="0.81" text="Postal Code">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="739.0" layoutY="181.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtPostalCode" focusTraversable="false" layoutX="4.0" layoutY="4.0" maxWidth="200.0" onKeyReleased="#validationOnAction" prefHeight="26.0" prefWidth="161.0" promptText="Postal Code" styleClass="textField" />
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnSave" focusTraversable="false" layoutX="451.0" layoutY="259.0" onAction="#saveOnAction" prefHeight="39.0" prefWidth="96.0" styleClass="AllJFButtons" text="Save" />
+            <TableView fx:id="tblCustomer" focusTraversable="false" layoutX="94.0" layoutY="332.0" prefHeight="278.0" prefWidth="832.0">
+              <columns>
+                <TableColumn fx:id="clmCustId" prefWidth="107.0" text="Customer ID" />
+                <TableColumn fx:id="clmCustName" prefWidth="199.0" text="Customer Name" />
+                  <TableColumn fx:id="clmAddress" prefWidth="245.0" text="Address" />
+                  <TableColumn fx:id="clmPostalCode" prefWidth="124.0" text="Postal Code" />
+                  <TableColumn fx:id="clmCity" prefWidth="156.0" text="City" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="btnDelete" focusTraversable="false" layoutX="462.0" layoutY="623.0" onAction="#deleteOnAction" prefHeight="26.0" prefWidth="96.0" styleClass="DeleteButton" text="Delete" />
+            <ComboBox fx:id="cmbTitle" layoutX="215.0" layoutY="101.0" prefHeight="34.0" prefWidth="84.0" styleClass="combo-boxInAddCustomer" />
+            <Label layoutX="215.0" layoutY="69.0" opacity="0.81" text="Title">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/HomeFormStye.css" />
+      <URL value="@../style/addItemFormStyle.css" />
+   </stylesheets>
+</AnchorPane>

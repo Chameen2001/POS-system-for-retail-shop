@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="524.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditItemDetailFormController">
+   <children>
+      <Pane layoutX="41.0" layoutY="90.0" styleClass="sideMenuBox" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label layoutX="33.0" layoutY="58.0" styleClass="label1" text="Item Code">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="33.0" layoutY="91.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtItemCode" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="I-001" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="33.0" layoutY="152.0" styleClass="label1" text="Product Description">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="540.0" layoutY="58.0" styleClass="label1" text="Package Size">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="279.0" layoutY="60.0" styleClass="label1" text="Quantity On Hand">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="771.0" layoutY="60.0" styleClass="label1" text="Unit Price">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="279.0" layoutY="91.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtQtyOnHand" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="10" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="540.0" layoutY="91.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtPackSize" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="25" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="772.0" layoutY="91.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtUnitPrice" layoutX="3.0" layoutY="1.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="125.50" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="35.0" layoutY="239.0" styleClass="label1" text="Discount">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="239.0" styleClass="label1" text="Dis. For Every">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="364.0" layoutY="241.0" styleClass="label1" text="Max Discount">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="35.0" layoutY="276.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtDiscount" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="85.0" promptText="5" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="190.0" layoutY="276.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtEveryItem" layoutX="2.0" layoutY="2.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="110.0" promptText="10" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="364.0" layoutY="278.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtMaxDiscount" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="91.0" promptText="15" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnUpdate" layoutX="439.0" layoutY="384.0" onAction="#updateOnAction" prefHeight="39.0" prefWidth="85.0" styleClass="AllJFButtons" text="Update" />
+            <AnchorPane layoutX="34.0" layoutY="189.0" styleClass="textFieldWrapper">
+               <children>
+                  <TextField fx:id="txtDescription" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="903.0" promptText="Description" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="133.0" layoutY="278.0" styleClass="label1" text="\%">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="470.0" layoutY="280.0" styleClass="label1" text="\%">
+               <font>
+                  <Font name="Loma" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/addItemFormStyle.css" />
+      <URL value="@../style/HomeFormStye.css" />
+   </stylesheets>
+</AnchorPane>
