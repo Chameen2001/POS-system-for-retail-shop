@@ -32,7 +32,7 @@
       <Button fx:id="btnSave" layoutX="206.0" layoutY="163.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="26.0" prefWidth="79.0" styleClass="AllJFButtons" text="Save" />
    </children>
    <stylesheets>
-      <URL value="@../style/HomeFormStye.css" />
-      <URL value="@../style/addItemFormStyle.css" />
+      <URL value="@assests/style/HomeFormStye.css" />
+      <URL value="@assests/style/addItemFormStyle.css" />
    </stylesheets>
 </AnchorPane>

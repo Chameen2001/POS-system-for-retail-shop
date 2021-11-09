@@ -19,7 +19,7 @@
             </Label>
             <AnchorPane layoutX="33.0" layoutY="91.0" styleClass="textFieldWrapper">
                <children>
-                  <TextField fx:id="txtItemCode" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="I-001" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+                  <TextField fx:id="txtItemCode" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="I-001" styleClass="textField" stylesheets="@assests/style/addItemFormStyle.css" />
                </children>
             </AnchorPane>
             <Label layoutX="33.0" layoutY="152.0" styleClass="label1" text="Product Description">
@@ -44,17 +44,17 @@
             </Label>
             <AnchorPane layoutX="279.0" layoutY="91.0" styleClass="textFieldWrapper">
                <children>
-                  <TextField fx:id="txtQtyOnHand" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="10" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+                  <TextField fx:id="txtQtyOnHand" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="10" styleClass="textField" stylesheets="@assests/style/addItemFormStyle.css" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="540.0" layoutY="91.0" styleClass="textFieldWrapper">
                <children>
-                  <TextField fx:id="txtPackSize" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="25" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+                  <TextField fx:id="txtPackSize" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="25" styleClass="textField" stylesheets="@assests/style/addItemFormStyle.css" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="772.0" layoutY="91.0" styleClass="textFieldWrapper">
                <children>
-                  <TextField fx:id="txtUnitPrice" layoutX="3.0" layoutY="1.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="125.50" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+                  <TextField fx:id="txtUnitPrice" layoutX="3.0" layoutY="1.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="173.0" promptText="125.50" styleClass="textField" stylesheets="@assests/style/addItemFormStyle.css" />
                </children>
             </AnchorPane>
             <Label layoutX="35.0" layoutY="239.0" styleClass="label1" text="Discount">
@@ -74,23 +74,23 @@
             </Label>
             <AnchorPane layoutX="35.0" layoutY="276.0" styleClass="textFieldWrapper">
                <children>
-                  <TextField fx:id="txtDiscount" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="85.0" promptText="5" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+                  <TextField fx:id="txtDiscount" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="85.0" promptText="5" styleClass="textField" stylesheets="@assests/style/addItemFormStyle.css" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="190.0" layoutY="276.0" styleClass="textFieldWrapper">
                <children>
-                  <TextField fx:id="txtEveryItem" layoutX="2.0" layoutY="2.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="110.0" promptText="10" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+                  <TextField fx:id="txtEveryItem" layoutX="2.0" layoutY="2.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="110.0" promptText="10" styleClass="textField" stylesheets="@assests/style/addItemFormStyle.css" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="364.0" layoutY="278.0" styleClass="textFieldWrapper">
                <children>
-                  <TextField fx:id="txtMaxDiscount" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="91.0" promptText="15" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+                  <TextField fx:id="txtMaxDiscount" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="91.0" promptText="15" styleClass="textField" stylesheets="@assests/style/addItemFormStyle.css" />
                </children>
             </AnchorPane>
             <JFXButton fx:id="btnUpdate" layoutX="439.0" layoutY="384.0" onAction="#updateOnAction" prefHeight="39.0" prefWidth="85.0" styleClass="AllJFButtons" text="Update" />
             <AnchorPane layoutX="34.0" layoutY="189.0" styleClass="textFieldWrapper">
                <children>
-                  <TextField fx:id="txtDescription" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="903.0" promptText="Description" styleClass="textField" stylesheets="@../style/addItemFormStyle.css" />
+                  <TextField fx:id="txtDescription" layoutX="2.0" layoutY="3.0" onKeyReleased="#validateOnAction" prefHeight="26.0" prefWidth="903.0" promptText="Description" styleClass="textField" stylesheets="@assests/style/addItemFormStyle.css" />
                </children>
             </AnchorPane>
             <Label layoutX="133.0" layoutY="278.0" styleClass="label1" text="\%">
@@ -107,7 +107,7 @@
       </Pane>
    </children>
    <stylesheets>
-      <URL value="@../style/addItemFormStyle.css" />
-      <URL value="@../style/HomeFormStye.css" />
+      <URL value="@assests/style/addItemFormStyle.css" />
+      <URL value="@assests/style/HomeFormStye.css" />
    </stylesheets>
 </AnchorPane>

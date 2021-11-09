@@ -13,7 +13,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     @Override
     public String generateNewCustomerId() throws SQLException, ClassNotFoundException {
 
-        ResultSet resultSet = (ResultSet) CrudUtil.execute("SELECT custId FROM Customer ORDER BY custId DESC LIMIT 1");
+        ResultSet resultSet = (ResultSet) CrudUtil.execute("SELECT cusId FROM Customer ORDER BY cusId DESC LIMIT 1");
         if (resultSet.next()) {
             int id = Integer.parseInt(resultSet.getString(1).split("-")[1]);
             id = ++id;
@@ -31,7 +31,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     @Override
     public ArrayList<String> getAllCustomersId() throws SQLException, ClassNotFoundException {
 
-        ResultSet resultSet = (ResultSet) CrudUtil.execute("SELECT custId FROM Customer");
+        ResultSet resultSet = (ResultSet) CrudUtil.execute("SELECT cusId FROM Customer");
         ArrayList<String> customerIds = new ArrayList<>();
         while (resultSet.next()) {
             customerIds.add(resultSet.getString(1));
@@ -75,7 +75,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     @Override
     public Customer get(String id) throws SQLException, ClassNotFoundException {
 
-        ResultSet resultSet = (ResultSet) CrudUtil.execute("SELECT * FROM Customer WHERE custId=?",id);
+        ResultSet resultSet = (ResultSet) CrudUtil.execute("SELECT * FROM Customer WHERE cusId=?",id);
         Customer customer = null;
         if (resultSet.next()) {
             customer = new Customer(

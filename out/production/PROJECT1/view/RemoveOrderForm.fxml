@@ -39,7 +39,7 @@
       </Pane>
    </children>
    <stylesheets>
-      <URL value="@../style/addItemFormStyle.css" />
-      <URL value="@../style/HomeFormStye.css" />
+      <URL value="@assests/style/addItemFormStyle.css" />
+      <URL value="@assests/style/HomeFormStye.css" />
    </stylesheets>
 </AnchorPane>

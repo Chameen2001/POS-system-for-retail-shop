@@ -14,7 +14,7 @@ public class QueryDAOImpl implements QueryDAO {
     public ArrayList<CustomDTO> getCustomerWiseIncome() throws SQLException, ClassNotFoundException {
 
         ArrayList<CustomDTO> customerWiseIncomeData = new ArrayList<>();
-        ResultSet resultSet = (ResultSet) CrudUtil.execute("select c.custId,c.custTitle,c.custName,c.custAddress,SUM(o.cost) FROM Customer c INNER JOIN `Order` o ON o.custId=c.custId GROUP BY c.custId");
+        ResultSet resultSet = (ResultSet) CrudUtil.execute("select c.cusId,c.cusTitle,c.cusName,c.address,SUM(o.cost) FROM Customer c INNER JOIN `Order` o ON o.cusId=c.cusId GROUP BY c.cusId");
         while (resultSet.next()) {
             customerWiseIncomeData.add(new CustomDTO(
                     resultSet.getString(1),

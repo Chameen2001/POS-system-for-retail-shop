@@ -4,30 +4,37 @@
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/HomeFormStye.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementLogInFormController">
+<AnchorPane prefHeight="314.0" prefWidth="600.0" stylesheets="@assests/style/HomeFormStye.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementLogInFormController">
    <children>
-      <Label layoutX="199.0" layoutY="34.0" text="Management Log In">
+      <Label layoutX="247.0" layoutY="29.0" text="Management Log In" textFill="#000000b7">
          <font>
-            <Font name="Barlow Condensed Medium" size="30.0" />
+            <Font name="Barlow Condensed Medium" size="23.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtUserName" focusTraversable="false" labelFloat="true" layoutX="117.0" layoutY="125.0" prefHeight="39.0" prefWidth="360.0" promptText="User Name">
+      <JFXTextField fx:id="txtUserName" focusTraversable="false" labelFloat="true" layoutX="247.0" layoutY="95.0" prefHeight="32.0" prefWidth="261.0" promptText="User Name">
          <font>
             <Font size="16.0" />
          </font>
       </JFXTextField>
-      <JFXButton layoutX="248.0" layoutY="310.0" onAction="#logInOnAction" styleClass="AllJFButtons" text="Log In">
+      <JFXButton layoutX="345.0" layoutY="231.0" onAction="#logInOnAction" prefHeight="14.0" prefWidth="66.0" styleClass="AllJFButtons" text="Log In">
          <font>
-            <Font size="22.0" />
+            <Font size="15.0" />
          </font>
       </JFXButton>
-      <JFXPasswordField fx:id="txtPassword" focusTraversable="false" labelFloat="true" layoutX="117.0" layoutY="200.0" prefHeight="39.0" prefWidth="360.0" promptText="Password">
+      <JFXPasswordField fx:id="txtPassword" focusTraversable="false" labelFloat="true" layoutX="247.0" layoutY="170.0" prefHeight="32.0" prefWidth="261.0" promptText="Password">
          <font>
             <Font size="16.0" />
          </font>
       </JFXPasswordField>
+      <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="59.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/icons8-user-100.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

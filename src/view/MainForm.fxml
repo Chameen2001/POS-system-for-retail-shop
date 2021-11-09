@@ -101,8 +101,8 @@
          </BorderPane.margin></VBox>
    </left>
    <stylesheets>
-      <URL value="@../style/addItemFormStyle.css" />
-      <URL value="@../style/HomeFormStye.css" />
+      <URL value="@assests/style/addItemFormStyle.css" />
+      <URL value="@assests/style/HomeFormStye.css" />
    </stylesheets>
    <top>
       <HBox prefHeight="32.0" prefWidth="1018.0" BorderPane.alignment="CENTER">

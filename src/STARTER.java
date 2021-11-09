@@ -14,7 +14,7 @@ public class STARTER extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Scene scene = new Scene(FXMLLoader.load(getClass().getResource("view/MainForm.fxml")));
-        scene.getStylesheets().add("style/addItemFormStyle.css");
+        scene.getStylesheets().add("view/assests/style/addItemFormStyle.css");
         primaryStage.setScene(scene);
         primaryStage.show();
 
